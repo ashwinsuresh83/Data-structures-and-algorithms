@@ -3,7 +3,6 @@
 using namespace std;
 bool isValid(int arr[],int n,int m,int mid){
 	int sum=0;
-	cout<<mid<<endl;
 	for(int i=0;i<n;i++){
 		if(arr[i]>mid){
 			sum+=(arr[i]-mid);
@@ -30,7 +29,6 @@ int main() {
 	int res=-1;
 	while(start<=endi){
 		int mid=start+ (endi-start)/2;
-		cout<<start<<" "<<endi<<endl;
 		if(isValid(arr,n,m,mid)){
 			res=mid;
 			start=mid+1;
